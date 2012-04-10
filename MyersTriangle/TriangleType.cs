@@ -5,7 +5,8 @@ using System.Text;
 
 namespace MyersTriangle
 {
-    public class Class1
+    public enum TriangleType
     {
+        Equilateral
     }
 }
