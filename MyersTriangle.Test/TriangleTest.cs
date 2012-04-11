@@ -29,5 +29,12 @@ namespace MyersTriangle.Test
             var triangle = new Triangle(2, 2, 1);
             Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Isosceles));
         }
+
+        [Test]
+        public void Test_1と3と3を渡したら二等辺三角形と判定されること()
+        {
+            var triangle = new Triangle(1, 3, 3);
+            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Isosceles));
+        }
     }
 }
