@@ -78,5 +78,12 @@ namespace MyersTriangle.Test
             var triangle = new Triangle(3, 6, 2);
             Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Invalid));
         }
+
+        [Test]
+        public void Test_minus1と4と5を渡したら三角形でないと判定されること()
+        {
+            var triangle = new Triangle(-1, 4, 5);
+            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Invalid));
+        }
     }
 }
