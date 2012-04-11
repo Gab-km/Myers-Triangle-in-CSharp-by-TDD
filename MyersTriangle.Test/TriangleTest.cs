@@ -38,9 +38,9 @@ namespace MyersTriangle.Test
         }
 
         [Test]
-        public void Test_1と2と3を渡したら不等辺三角形と判定されること()
+        public void Test_4と2と3を渡したら不等辺三角形と判定されること()
         {
-            var triangle = new Triangle(1, 2, 3);
+            var triangle = new Triangle(4, 2, 3);
             Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Scalene));
         }
 
