@@ -43,5 +43,12 @@ namespace MyersTriangle.Test
             var triangle = new Triangle(1, 2, 3);
             Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Scalene));
         }
+
+        [Test]
+        public void Test_3と4と5を渡したら不等辺三角形と判定されること()
+        {
+            var triangle = new Triangle(3, 4, 5);
+            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Scalene));
+        }
     }
 }
