@@ -9,6 +9,7 @@ namespace MyersTriangle
     {
         Equilateral,
         Isosceles,
-        Scalene
+        Scalene,
+        Invalid
     }
 }
