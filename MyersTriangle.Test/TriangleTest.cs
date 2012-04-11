@@ -9,11 +9,11 @@ namespace MyersTriangle.Test
 {
     public class TriangleTest
     {
-        [Test]
-        public void Test_すべて1を渡したら正三角形と判定されること()
+        [TestCase(1,1,1,TriangleType.Equilateral)]
+        public void 三角形を判定する(int side1,int side2,int side3, TriangleType resutl)
         {
-            Triangle triangle = new Triangle(1, 1, 1);
-            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Equilateral));
+            Triangle triangle = new Triangle(side1, side2, side3);
+            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(resutl));
         }
 
         [Test]
