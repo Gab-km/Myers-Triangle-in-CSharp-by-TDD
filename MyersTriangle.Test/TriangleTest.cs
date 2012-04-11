@@ -15,5 +15,12 @@ namespace MyersTriangle.Test
             Triangle triangle = new Triangle(1, 1, 1);
             Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Equilateral));
         }
+
+        [Test]
+        public void Test_すべて2を渡したら正三角形と判定されること()
+        {
+            Triangle triangle = new Triangle(2, 2, 2);
+            Assert.That(triangle.GetTypeOfTriangle(), Is.EqualTo(TriangleType.Equilateral));
+        }
     }
 }
