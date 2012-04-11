@@ -7,6 +7,7 @@ namespace MyersTriangle
 {
     public enum TriangleType
     {
-        Equilateral
+        Equilateral,
+        Isosceles
     }
 }
