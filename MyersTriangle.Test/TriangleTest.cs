@@ -22,6 +22,7 @@ namespace MyersTriangle.Test
         [TestCase(2, 4, 2, TriangleType.Invalid)]
         [TestCase(6, 3, 3, TriangleType.Invalid)]
         [TestCase(-1, 4, 5, TriangleType.Invalid)]
+        [TestCase(0, 0, 0, TriangleType.Invalid)]
         public void 三角形を判定する(decimal side1, decimal side2, decimal side3, TriangleType resutl)
         {
             var triangle = new Triangle(side1, side2, side3);
