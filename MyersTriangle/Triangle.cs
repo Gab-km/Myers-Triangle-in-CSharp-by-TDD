@@ -22,18 +22,21 @@ namespace MyersTriangle
         {
             if (this._side1 == 0 || this._side2 == 0 || this._side3 == 0)
                 return TriangleType.Invalid;
-            if ((this._side3 >= this._side1 && this._side3 >= this._side2 && this._side1 + this._side2 <= this._side3)
-                || (this._side1 >= this._side2 && this._side1 >= this._side3 && this._side2 + this._side3 <= this._side1)
-                || (this._side2 >= this._side3 && this._side2 >= this._side1 && this._side3 + this._side1 <= this._side2))
-                return TriangleType.Invalid;
-            if (this._side1 == this._side2 && this._side1 == this._side3)
-                return TriangleType.Equilateral;
-            else if (this._side1 == this._side2
-                || this._side2 == this._side3
-                || this._side3 == this._side1)
-                return TriangleType.Isosceles;
+            if (this._side1 + this._side2 > this._side3
+                && this._side2 + this._side3 >= this._side1
+                && this._side3 + this._side1 >= this._side2)
+            {
+                if (this._side1 == this._side2 && this._side1 == this._side3)
+                    return TriangleType.Equilateral;
+                else if (this._side1 == this._side2
+                    || this._side2 == this._side3
+                    || this._side3 == this._side1)
+                    return TriangleType.Isosceles;
+                else
+                    return TriangleType.Scalene;
+            }
             else
-                return TriangleType.Scalene;
+                return TriangleType.Invalid;
         }
     }
 }
