@@ -21,7 +21,7 @@ namespace MyersTriangle
         public TriangleType GetTypeOfTriangle()
         {
             if (this._side1 + this._side2 > this._side3
-                && this._side2 + this._side3 >= this._side1
+                && this._side2 + this._side3 > this._side1
                 && this._side3 + this._side1 > this._side2)
             {
                 if (this._side1 == this._side2 && this._side1 == this._side3)
