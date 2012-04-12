@@ -7,11 +7,11 @@ namespace MyersTriangle
 {
     public class Triangle
     {
-        private int _side1;
-        private int _side2;
-        private int _side3;
+        private decimal _side1;
+        private decimal _side2;
+        private decimal _side3;
 
-        public Triangle(int side1, int side2, int side3)
+        public Triangle(decimal side1, decimal side2, decimal side3)
         {
             this._side1 = side1;
             this._side2 = side2;
