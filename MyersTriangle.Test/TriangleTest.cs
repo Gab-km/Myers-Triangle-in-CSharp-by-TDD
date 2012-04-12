@@ -13,6 +13,7 @@ namespace MyersTriangle.Test
         [TestCase(2, 2, 2, TriangleType.Equilateral)]
         [TestCase(2, 2, 1, TriangleType.Isosceles)]
         [TestCase(1, 3, 3, TriangleType.Isosceles)]
+        [TestCase(2, 3, 2, TriangleType.Isosceles)]
         [TestCase(4, 2, 3, TriangleType.Scalene)]
         [TestCase(3, 4, 5, TriangleType.Scalene)]
         [TestCase(1, 2, 0, TriangleType.Invalid)]
